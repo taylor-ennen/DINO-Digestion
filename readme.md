@@ -9,12 +9,21 @@ this project is about to ballon. honestly, forgive me.
 
 
 How to run:
-
+```bash
 git clone https://www.github.com/taylor-ennen/DINO-Digestion
 cd DINO-Digestion/
 git clone https://www.github.com/ggerganov/llama.cpp
 
 python3 -m pip install -r requirements.txt
+```
 
+Now that the requirements are fulfilled you can run -help to see the options for the download_and_convert_to_gguf.py script:
+```bash
+python3 download_and_convert_to_gguf.py -h
+```
+
+Finally, if you just want a quick small model to test with, you can run (you'll need to have room for the model and conversion into gguf format, so about 20GB of space free on your machine including the libraries in the requirements for llama.cpp):
+```bash
 python3 download_and_convert_to_gguf.py -r microsoft/phi-2 -o f16
+```
 
