@@ -125,6 +125,15 @@ if you would like to or need to redownload the model, please delete the folder \
     )
 logging.info(f"Model {model_id} exists on the file system in {model_path}")
 
+if not os.path.exists(converted_models_output_folder):
+    try:
+        os.makedirs(converted_models_output_folder)
+    except Exception as e:
+        logging.info(f"Error creating converted models folder: {e}")
+else:
+    logging.info(
+        f"Converted models folder {converted_models_output_folder} exists"
+    )
 logging.info(
     "Starting Conversion...this may take a while..do not close the terminal window until you see confirmation, thanks!"
 )
