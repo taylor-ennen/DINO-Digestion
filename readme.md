@@ -26,4 +26,5 @@ Finally, if you just want a quick small model to test with, you can run (you'll 
 ```bash
 python3 download_and_convert_to_gguf.py -r microsoft/phi-2 -o f16
 ```
-
+There is also a colab with the command needed to utilize this in a notebook for examples sake:
+https://colab.research.google.com/drive/14SIfW93N5cAVfLDX3l23Xjm5btPWR8SV#scrollTo=f68bYcaYDf1S
