@@ -1,2 +1,4 @@
 converted_models/
 downloaded_models/
+llama.cpp/
+.vscode/
